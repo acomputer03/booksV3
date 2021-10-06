@@ -5,6 +5,7 @@
       </div>
     <div class="mt-3 position-relative">
       <ToastMessages></ToastMessages>
+      <CartIcon></CartIcon>
       <router-view/>
     </div>
   </div>
@@ -32,11 +33,13 @@
 import emitter from '@/methods/emitter';
 import ToastMessages from '@/components/ToastMessages.vue';
 import UserNavbar from '@/components/user/UserNavbar.vue';
+import CartIcon from '@/components/user/CartIcon.vue';
 
 export default {
   components: {
     UserNavbar,
     ToastMessages,
+    CartIcon,
   },
   provide() {
     return {

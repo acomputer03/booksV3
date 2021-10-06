@@ -6,7 +6,7 @@
           <a class="navbar-brand text-black d-flex align-items-center"  href="#">
             <img src="../../assets/images/travel_icon.png"
             class="me-2" alt="logo" width="30" height="30">
-            <h1 class="h2 mb-n1" style="margin-bottom: 0">微 ‧ 旅行</h1>
+            <h1 class="h2 mb-n1" style="margin-bottom: 0">閱讀趣</h1>
           </a>
         </div>
         <button
@@ -21,14 +21,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+          <ul class="navbar-nav ms-auto d-flex align-items-center">
+            <li class="nav-item me-1">
               <router-link class="nav-link text-black a-hover"
-              to="/products">跟團遊</router-link>
-            </li>
-            <li class="nav-item ">
-              <router-link class="nav-link text-black a-hover"
-              to="/dashboard/coupons">優惠券</router-link>
+              to="/products">皇家書院</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link text-black a-hover"
@@ -45,15 +41,14 @@
               </router-link>
             </li>
           </ul>
-          <ul class="navbar-nav ">
-            <li class="nav-item">
-              <a class="nav-link text-black a-hover" type="button"
-              @click.prevent="logout">登出</a>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
   </div>
 </template>
 
+<style>
+.bi-cart3{
+  font-size: 25px;
+}
+</style>

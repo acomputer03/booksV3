@@ -8,7 +8,7 @@
       <!-- <div class="container-fluid mt-3 position-relative"> -->
       <div class="bgImg banner justify-content-between align-items-center">
           <div class="bannerSlogan d-flex flex-column align-items-center">
-            <p class="typeAnime">你已經有多久沒有來點微旅行？!</p>
+            <p class="typeAnime">你已經有多久沒有好好放鬆看一本書？!</p>
           </div>
       </div>
 

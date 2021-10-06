@@ -82,6 +82,7 @@
 </style>
 <script>
 import ShoppingNotes from '../../components/user/ShoppingNotes.vue';
+import emitter from '@/methods/emitter';
 
 export default {
   components: {
@@ -123,6 +124,7 @@ export default {
       this.$http.post(api, { data: cart }).then((res) => {
         if (res.data.success) {
           // console.log(res);
+          emitter.emit('update-cart');
           this.status.loadingItem = '';
           this.$httpMessageState(res, '加入購物車');
         }

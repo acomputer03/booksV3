@@ -13,22 +13,27 @@ const routes = [
     children: [
       {
         path: 'product/:id',
+        name: 'product',
         component: () => import('../views/user/Product.vue'),
       },
       {
         path: 'cart',
+        name: 'cart',
         component: () => import('../views/user/Cart.vue'),
       },
       {
         path: 'userinfo',
+        name: 'userinfo',
         component: () => import('../views/user/UserInfo.vue'),
       },
       {
         path: 'orderconfirmation/:orderId',
+        name: 'orderconfirmation',
         component: () => import('../views/user/OrderConfirmation.vue'),
       },
       {
         path: 'ordersearch',
+        name: 'ordersearch',
         component: () => import('../views/user/OrderSearch.vue'),
       },
       {
@@ -38,6 +43,7 @@ const routes = [
       },
       {
         path: '/myfavorite',
+        name: 'myfavorite',
         component: () => import('../views/user/MyFavorite.vue'),
       },
     ],

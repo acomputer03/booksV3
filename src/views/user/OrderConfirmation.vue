@@ -1,7 +1,24 @@
 <template>
   <Loading :active="isLoading"></Loading>
   <div class="container my-5">
-    <div class="col-md-10 m-auto">
+    <div class="row text-center">
+      <div class="col-12 col-md-4"><!-- 小裝置為1列 大裝置並排-->
+        <div class="alert alert-success alert-rounded" role="alert">
+          1.購物車內容
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="alert alert-success alert-rounded " role="alert">
+          2.填寫資訊
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="alert alert-warning alert-rounded" role="alert">
+          3.完成
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10 m-auto mt-5">
       <div class="card text-center">
         <div class="card-header">
           <span class="h4">訂單</span>

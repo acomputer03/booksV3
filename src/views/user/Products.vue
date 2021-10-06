@@ -85,12 +85,12 @@
                   <strong class="">推薦</strong></span>
                 </div>
               </div>
-              <div class="col-md-8 " style="position: relative;">
+              <div class="col-md-8 position-relative" style="position: relative;">
                 <div class="card-body mb-5 ">
                   <div>
                     <p class="h5">
                       <span class="badge rounded-pill bg-info text-dark
-                      float-end ml-2">{{ item.category }}</span>
+                      float-end ml-2 position-absolute top-10">{{ item.category }}</span>
                     </p>
                     <h5 class="card-title">{{item.title}}</h5>
                     <p class="card-text" v-html="item.description.replace(/\n/g, '<br>')"></p>
@@ -152,6 +152,7 @@
 </style>
 
 <script>
+import emitter from '@/methods/emitter';
 
 export default {
   data() {
@@ -193,8 +194,10 @@ export default {
         qty: 1,
       };
       this.$http.post(api, { data: cart }).then((res) => {
+        // console.log('123', emitter.emit('update-cart'));
         if (res.data.success) {
           console.log(res);
+          emitter.emit('update-cart');
           this.status.loadingItem = '';
           this.$httpMessageState(res, '加入購物車');
         }
